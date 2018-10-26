@@ -1,3 +1,11 @@
+## Initial Submition
+* So far I was able to follow along with the videos of Thursdays class and code allong with John.
+
+* I have not worked on any testing yet.
+
+* I Hope to work on labs 06, 07, 08, and 09 this weekend and hopefully be ready for Mongo on Monday.
+
+
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB - Dynamic API Routing
 =================================================
 
