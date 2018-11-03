@@ -1,5 +1,9 @@
+[![Build Status](https://www.travis-ci.com/edpuzino/lab-09.svg?branch=master)](https://www.travis-ci.com/edpuzino/lab-09)
+
+https://ed-lab-09.herokuapp.com/
+
 ## Initial Submition
-* So far I was able to follow along with the videos of Thursdays class and code allong with John.
+* So far I was able to follow along with the videos of Thursdays class and code along with John.
 
 * I have not worked on any testing yet.
 

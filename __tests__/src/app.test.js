@@ -14,7 +14,7 @@ describe('api server', () => {
         expect(results.status).toBe(404);
       })
       .catch(err => {
-        expect(err).not.toBeDefined();
+        expect(err).notToBe(defined);
       });
 
   });
@@ -27,37 +27,38 @@ describe('api server', () => {
         expect(results.status).toBe(404);
       })
       .catch(err => {
-        expect(err).not.toBeDefined();
+        expect(err).notToBe(defined);
       });
 
   });
 
-  it('should respond properly on request to /api/v1/notes', () => {
-
-    return mockRequest
-      .get('/api/v1/notes')
-      .then(results => {
-        expect(results.status).toBe(200);
-      })
-      .catch(err => {
-        expect(err).not.toBeDefined();
-      });
-
-  });
 
   it('should be able to post to /api/v1/notes', () => {
 
     let obj = {title:'test',text:'foo'};
 
     return mockRequest
-      .post('/api/v1/notes')
+      .post('/api/v1/:model')
       .send(obj)
       .then(results => {
         expect(results.status).toBe(200);
         expect(results.body.title).toEqual(obj.title);
       })
       .catch(err => {
-        expect(err).not.toBeDefined();
+        expect(err);
+      });
+
+  });
+  
+  it('should respond properly on request to /api/v1/notes', () => {
+
+    return mockRequest
+      .get('/api/v1/:model')
+      .then(results => {
+        expect(results.status).toBe(200);
+      })
+      .catch(err => {
+        expect(err);
       });
 
   });

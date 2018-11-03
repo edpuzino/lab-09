@@ -6,10 +6,10 @@ import fileStorage from './filesystem.js';
 let dataStorageModule = {};
 
 switch ( process.env.Storage ) {
-  case 'filesystem':
+case 'filesystem':
   dataStorageModule = fileStorage;
   break;
-  default:
+default:
   dataStorageModule = memoryStorage;
   break;
 
