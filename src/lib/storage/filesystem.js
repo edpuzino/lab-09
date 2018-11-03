@@ -16,7 +16,7 @@ storage.find = query => {
   return new Promise( (resolve,reject) => {
 
     if ( id ) {
-      if ( databse[id] ) { resolve(database[id]); }
+      if ( database[id] ) { resolve(database[id]); }
       else {
         reject( 'Record Not Found');
       }
